@@ -10,6 +10,8 @@
 .project:hover{
 	width:260px;
 	height:310px;
+	box-shadow: -10px 5px 5px 0 #333333;
+
 }
 .project:hover > div{
 	background-color: #EEEEEE;
@@ -56,7 +58,9 @@
 	
 	flex-wrap: wrap;
 }
-
+.projects a{
+	text-decoration: none;
+}
 section{
 	display: flex;
 	flex-direction: column;
