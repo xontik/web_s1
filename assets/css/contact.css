@@ -44,3 +44,6 @@ textarea{
 #message:target{
 	display:block;
 }
+#message p{
+	margin:10px;
+}
