@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
 <head>
-	<title>Galerie des projets tuteurés</title>
+	<title>Contactez-nous !</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  
 	<link rel="stylesheet" type="text/css" href="./assets/css/principal.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/galerie.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
 </head>
 <body>
 <nav> <!-- menu horizontale -->
@@ -19,8 +19,41 @@
 </ul>
 	
 </nav>
-
-
+<main>
+	
+	<section id="formulaire">
+	<h1>Contact</h1>
+		<form method="post" action="./contact.html#message">
+			<div>
+				
+				<label for="destinataire" >Destinataire :</label>
+				<select id="destinataire" name="destinataire">
+					<option value="b" >Benjamin</option>
+					<option value="a">Alexandre</option>
+				</select>
+			
+			</div>
+			<div>
+				<label for="mail" >E-mail :</label>
+				<input required type="email" id="mail" name="mail" />
+			</div>
+			<div>
+				<textarea>Tapez votre message ici</textarea>
+			</div>
+			<div>
+				
+				<p><input type="checkbox" name="copiemail">Cochez cette case pour recevoir une copie du message par mail<p>
+			</div>
+			<div>
+				<button type="submit">Envoyer</button>
+			</div>
+		</form>
+	</section>
+	<section id="message">
+	<h1>Contact</h1>
+		<p>Merci de votre message ! On vous repondra le plus vite possible ! </p>
+	</section>
+</main>
 
 
 <footer> <!-- Pied de page -->
@@ -31,7 +64,7 @@
 		<ul>
 			<li>Ben & Alex © 2016</li>
 			<li><a href="http://iut.univ-lyon1.fr/">IUT Lyon 1</a></li>
-			<li><a href="./contact.html">Contactez-nous !</a></li>
+			<li><a href="./contact.html#formulaire">Contactez-nous !</a></li>
 		</ul>
 		<p id="cadre">
 			Site réalisé dans le cadre du projet web du S1 a l'IUT Lyon 1
