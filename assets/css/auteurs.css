@@ -33,6 +33,9 @@ article div img{
 .competence{
 	width: 100%;
 }
+.competence h2{
+	text-align: center;
+}
 .competence div{
 	width: 100%;
 	display: flex;
