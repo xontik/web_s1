@@ -1,49 +1,65 @@
+h1{
+	background-color:rgba(30,30,30,0.15);
+	margin-top: 0;
+	padding: 10px 20px 10px 20px;
+	font-size: 30px;
+	box-shadow: -10px 10px 5px 0 #333333;
 
-.project{
+	/*border: 2px solid gray; 
+
+	border-radius: 10px 10px 10px 10px;*/
+	
+}
+article{
 	width:250px;
 	height:300px;
 	margin: 20px;
 	background-color: white;
 	border: 1px solid gray;
 	color: #5F5F5F;
+	transition: width 0.5s,height 0.5s,box-shadow 0.5s;
+
 }
-.project:hover{
+article:hover{
 	width:260px;
 	height:310px;
-	box-shadow: -10px 5px 5px 0 #333333;
+	box-shadow: -10px 7px 5px 0 #333333;
+
 
 }
-.project:hover > div{
-	background-color: #EEEEEE;
+article:hover > div{
+	background-color: rgba(250,250,250,0.9);
 }
 
-.project div{
+article div{
 	height: 90px;
 
 	position: relative;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: rgba(255,255,255,0.8);
 	top:-140px;
 	padding:5px;
+	transition: background-color 0.5s;
 }
 
-.project img{
+article img{
 	width:100%;
 	height:100%;
 }
-.project div h2{
+article div h2{
 	font-size: 20px;
 	margin: 0;
 
 }
-.project div p{
+article div p{
 	font-size: 16px;
 	margin: 0;
 
 }
-.project div h2 img{
+article div h2 img{
 	width:25px;
 	height:25px;
 	vertical-align: middle;
@@ -51,17 +67,17 @@
 }
 
 
-.projects{
+#projects > div{
 	display: flex;
 	justify-content: center;
 	align-content: space-between;
 	
 	flex-wrap: wrap;
 }
-.projects a{
+#projects a{
 	text-decoration: none;
 }
-section{
+#projects{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

@@ -2,14 +2,25 @@ body{
 	margin:0px;
 	font-family: arial;
 	background-color: #DDDDDD;
+	background: url("../images/patern.png");
+	background-size: 150px;
 	min-width: 250px;
+	width:100%;
 
 }
 nav{
+	position: fixed;
+	z-index: 10;
+	top:0;
+	width: 100%;
 	display: flex;
 	height: 50px;
-	background-color: gray;
-	vertical-align: center;
+	/*
+	background-color: rgba(128,128,128,0.9);
+	/**/
+	background: url("../images/iso.png");
+	background-size: 30px;
+	opacity: 0.9;
 }
 ul{
 	margin: auto;
@@ -23,37 +34,52 @@ ul{
 }
 nav ul{
 	height: 100%;
+	align-self: center;
 }
 nav li{
-	
+	margin: 0px;
 	padding: 10px;
 	padding-left: 20px;
 	padding-right:20px;
+	transition: background-color 0.5s;
 
 }
-nav a{
+nav li a{
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
+	transition: font-size 0.5s;
 }
 nav li:hover > a{
 	font-size: 22px;
-	color: white;
+	
 }
 nav li:hover{
-		background-color: #555555;
+	background-color: rgba(255,255,255,0.1);
 }
 
-h1{
-	background-color: #CCCCCC;
-	margin-top: 0;
-	padding: 10px;
-	border: 2px solid gray; 
-	border-top: none;
-	border-radius: 0 0 10px 10px;
+main{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
 }
-footer{
+h1{
+	background-color:rgba(30,30,30,0.15);
+	margin-top: 0;
+	padding: 10px 20px 10px 20px;
+	font-size: 30px;
+	box-shadow: -10px 10px 5px 0 #333333;
+
+	/*border: 2px solid gray; 
+
+	border-radius: 10px 10px 10px 10px;*/
 	
+}
+
+footer{
+	margin-top: 10px;
 	padding: 5px;
 
 	background-color: gray;
@@ -62,6 +88,8 @@ footer{
 	justify-content: space-around;
 	color: white;
 	font-size: 14px;
+	background: url("../images/iso.png");
+	background-size: 30px;
 }
 footer li{
 	margin-left:5px;
@@ -76,7 +104,9 @@ footer a{
 footer img{
 	max-width: 220px;
 	height:80px;
+
 }
+
 footer ul{
 	margin-bottom: 10px;
 }
@@ -101,7 +131,9 @@ footer ul{
 .footside{
 	width:250px;
 }
-
+.footside img:first-child {
+	margin-right: 10px;
+}
 
 
 @media screen and (max-width: 850px) {
@@ -119,7 +151,8 @@ footer ul{
 }
 @media screen and (max-width: 480px) {
 	nav{
-		height:150px
+		height:130px;
+		position: static;
 	}
 	nav ul{
 		flex-direction: column;
@@ -128,12 +161,19 @@ footer ul{
 	}
 	nav li{
 		width: 100%;
+		margin: 0px;
+		padding-right: 0px;
+		padding-left: 0px;
 		text-align: center;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid dimgray;
 	}
 	nav li:last-child{
 		border:none;
 	}
+	main{
+		margin-top: 10px;
+	}
+
 }
 @media screen and (max-width: 370px){
 	footer ul{
