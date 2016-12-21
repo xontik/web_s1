@@ -5,12 +5,13 @@ article{
 	background-color: white;
 	border: 1px solid gray;
 	color: #5F5F5F;
-	transition: width 0.5s,height 0.5s,box-shadow 0.5s;
+	transition: width 0.5s,height 0.5s,box-shadow 0.5s, margin 0.5s;
 
 }
 article:hover{
 	width:260px;
 	height:310px;
+	margin:15px;
 	box-shadow: -10px 7px 5px 0 #333333;
 
 
