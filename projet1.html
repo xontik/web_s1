@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  
 	<link rel="stylesheet" type="text/css" href="./assets/css/principal.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/galerie.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/projet.css">
 </head>
 <body>
 <nav> <!-- menu horizontale -->
@@ -19,11 +19,90 @@
 </ul>
 	
 </nav>
+<main>
+	<h1>Qualité de code : Mythe ou réalité ?</h1>
+	<section>
+		<h2>Revue de code</h2>
+		<p>
+		Trois types de revues de code existent :
+		</p>
+		<ul>
+			<li>
+				<em>Revue bloquante :</em> tout développement doit être relu avant de le mettre dans la branche principale
+			</li>
+			<li>
+				<em>Revue non-bloquante :</em> tout code source de la branche principale doit être relu
+			</li>
+			<li>
+				<em>Revue en binôme :</em> Deux personnes par poste échangent régulièrement les rôles et se relisent en continu
+			</li>
+		</ul>
+		<p><strong>Permet d’identifier des bugs pendant la phase de développement.</strong></p>
+	</section>
+	<section>
+		<h2>Convention de codage</h2>
+		<p>Les conventions de codage sont un moyen de standardiser des bonnes pratiques lorsque l’on code.</p>
+		<ul>
+			<li>Améliorer la lisibilité du code</li>
+			<li>Améliorer la maintenance future</li>
+			<li>Gagner du temps</li>
+		</ul>
+		<p><strong>Ce sont rarement des règles du langage mais elle sont respectées par presque tous.</strong></p>
+	</section>
+	<section>
+		<h2>Les commentaires</h2>
+		<p>Les commentaires sont des parties du code source ignorées par la machine.</p>
+		<ul>
+			<li>Destinés à être lus par un humain</li>
+			<li>Donnent des détails sur le code</li>
+			<li>Génèrent automatiquement une documentation</li>
+		</ul>
+		<p><strong>Trop de commentaires = code trop complexe.</strong></p>
 
-
-
-
-
+	</section>
+	<section>
+		<h2>Tests unitaires</h2>
+		<p>Les tests unitaires permettent de détecter des bugs pendant le développement. </p>
+		<ul>
+			<li>Nécessitent des fonctions les plus indépendantes possible</li>
+			<li>Ajoutent des coûts de développement</li>
+			<li>Impliquent le développement de nouveaux tests unitaires quand les fonctions changent</li>
+		</ul>
+		<p><strong>Permettent de trouver des bugs sans relecture du code mais alourdi la charge de travail.</strong></p>
+	</section>
+	<section>
+		<h2>Complexité</h2>
+		<p>La complexité d’une portion de code est proportionnelle au nombre de points de décision dans le code (condition, boucle...).<br />
+		Un code trop complexe est  : </p>
+		<ul>
+			<li>Difficile à comprendre et maintenir</li>
+			<li>Difficile à modifier </li>
+			<li>Difficile à tester</li>
+		</ul>
+		<p><strong>Une fonction, une mission.</strong></p>
+	</section>
+	<section>
+		<h2>Doublons</h2>
+		<p>Un doublon de code est une portion de code répétée à plusieurs endroits. </p>
+		<ul>
+			<li>Maintenance plus complexe</li>
+			<li>Modifications risquées</li>
+			<li>Risque d’oublis </li>
+		 </ul>
+		<p><strong>Solution: regrouper le code dupliqué en fonctions afin de les réutiliser à différents endroits.</strong></p>
+	</section>
+	<section>
+		<h2>Qu'en pensez vous ?</h2>
+		<form method="post" action="./eval.html">
+			
+			<div>
+				<label for="note">Note globale : </label><input required id="note" type="range" name="note" max="10" step="1" />
+			</div>
+			<textarea rows="5">Un commentaire ?</textarea>
+			<button type="submit">Evaluer</button>
+		</form>
+	</section>
+</main>
 <footer> <!-- Pied de page -->
 	<div class="footside">
 		<img src="./assets/images/iut.png" alt="logo de l'iut lyon 1"/>
@@ -32,7 +111,7 @@
 		<ul>
 			<li>Ben & Alex © 2016</li>
 			<li><a href="http://iut.univ-lyon1.fr/">IUT Lyon 1</a></li>
-			<li><a href="./contact.html">Contactez-nous !</a></li>
+			<li><a href="./contact.html#formulaire">Contactez-nous !</a></li>
 		</ul>
 		<p id="cadre">
 			Site réalisé dans le cadre du projet web du S1 a l'IUT Lyon 1

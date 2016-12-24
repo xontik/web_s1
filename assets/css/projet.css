@@ -1,0 +1,35 @@
+section{
+	background-color:rgba(30,30,30,0.15);
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	font-size: 18px;
+	box-shadow: -7px 7px 5px 0 #333333;
+	text-align: center;
+	width:80%;
+}
+section h2{
+	text-align: left;
+}
+section p{
+	text-align: justify;
+}
+section ul{
+	display: list-item;
+	text-align: left;
+	padding-left: 30px;
+}
+section li{
+	list-style-type: square;
+}
+section em{
+	text-decoration: underline;
+}
+form textarea{
+	width: 80%;
+	margin-top: 10px;
+}
+section form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
