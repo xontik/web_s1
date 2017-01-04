@@ -67,6 +67,7 @@ article div h2 img{
 	text-decoration: none;
 }
 #projects{
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-content: space-between;

@@ -29,7 +29,14 @@ form textarea{
 	margin-top: 10px;
 }
 section form{
+	width: 100%; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+form > div {
+	width: 100%;
+} 
+form div input{
+	max-width: 100%;
 }
