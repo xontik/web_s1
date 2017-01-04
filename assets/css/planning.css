@@ -1,0 +1,43 @@
+main div{
+	background-color:rgba(30,30,30,0.15);
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	font-size: 18px;
+	box-shadow: -7px 7px 5px 0 #333333;
+	text-align: center;
+	overflow-x: auto;
+	max-width: 80%;
+}
+
+table{
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+
+}
+tr{
+	height: 50px;
+	border-bottom: 2px solid gray;
+}
+
+tr>*{
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border-right: 2px solid gray;
+}
+tr>*:last-child{
+	border-right: none;
+}
+tbody>*:last-child{
+	border-bottom: none;
+}
+th{
+	color:gray;
+}
+
+th, td
+{
+	min-width: 100px;
+}
+
