@@ -4,18 +4,17 @@ section{
 	padding: 10px 20px 10px 20px;
 	font-size: 18px;
 	box-shadow: -7px 7px 5px 0 #333333;
-	text-align: center;
-	width:80%;
+	text-align: center; 
+	width:80%; 
 }
 section h2{
-	text-align: left;
+	text-align: left; /* on aligne a gauvhe les h2*/
 }
-section p{
+section p{ /* on justify les paragraphe*/
 	text-align: justify;
 }
 section ul{
-	display: list-item;
-	text-align: left;
+	text-align: left; 
 	padding-left: 30px;
 }
 section li{
@@ -24,25 +23,17 @@ section li{
 section em{
 	text-decoration: underline;
 }
-form textarea{
-	width: 80%;
-	margin-top: 10px;
-}
-section form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
+/* les images d'en haut*/
 #sample{
 	width: 100%;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
-	height: 250px;
-	flex-wrap: wrap;
+	
+	height: 250px; /* la taille des images */
+	flex-wrap: wrap; /* on les fait revenir a la ligne quand y'en a trop*/
+	overflow: hidden; /* et on cache des autres lignes */
 }
 #sample img{
-	height: 250px;
+	height: 250px; 
 }

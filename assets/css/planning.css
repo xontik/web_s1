@@ -5,7 +5,7 @@ main div{
 	font-size: 18px;
 	box-shadow: -7px 7px 5px 0 #333333;
 	text-align: center;
-	overflow-x: auto;
+	overflow-x: auto; /* on le rend scrollable horizontalement */
 	max-width: 80%;
 }
 
@@ -26,7 +26,7 @@ tr>*{
 
 	border-right: 2px solid gray;
 }
-tr>*:last-child{
+tr>*:last-child{ /* on enleve les bordures qui ne servent pas*/
 	border-right: none;
 }
 tbody>*:last-child{

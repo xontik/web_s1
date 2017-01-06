@@ -5,26 +5,26 @@ article{
 	background-color: white;
 	border: 1px solid gray;
 	color: #5F5F5F;
-	transition: width 0.5s,height 0.5s,box-shadow 0.5s, margin 0.5s;
+	transition: width 0.5s,height 0.5s,box-shadow 0.5s, margin 0.5s; 
 
 }
 article:hover{
-	width:260px;
+	width:260px; /*on agrandit un peu l'article*/
 	height:310px;
-	margin:15px;
+	margin:15px; /* mais on reduit ses marges pour pas bouger le reste*/
 	box-shadow: -10px 7px 5px 0 #333333;
 
 
 }
 article:hover > div{
-	background-color: rgba(250,250,250,0.9);
+	background-color: rgba(250,250,250,0.9);/* on change un peu le fond du bandeau*/
 }
 
 article div{
 	height: 90px;
 
-	position: relative;
-	z-index: 2;
+	position: relative; /* etre sur l'image*/
+	z-index: 2; /* pour etre en dessous du nav*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -60,7 +60,6 @@ article div h2 img{
 	display: flex;
 	justify-content: center;
 	align-content: space-between;
-	
 	flex-wrap: wrap;
 }
 #projects a{
