@@ -152,9 +152,7 @@ footer ul{
 
 }
 @media screen and (max-width: 480px) { /* deuxieme breakpoint */
-	@-ms-viewport { 
-    	width: 300px; /* on repart ie des windows phone :'( */
-	}
+	
 	nav{ /* on va passe le menu en colonnes et le laisser en haut de la page */
 		position: static; 
 		height:180px;
